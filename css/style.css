@@ -1,0 +1,181 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        background-color:rgb(238, 238, 226);
+    }
+    ul {
+        list-style: none;
+    }
+    .container {
+        padding-left: 150px;
+        padding-right: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 70px;
+    }
+    
+    /*small screens*/
+    @media( min-width: 768px){
+        .container{
+            width: 750px;
+        }
+    } 
+    @media( min-width: 992px){
+        .container{
+            width: 970px;
+        }
+    }
+    /*large screens*/
+    @media( min-width: 1200px){
+        .container{
+            width: 1170px;
+        }
+    }
+        nav {
+        flex: 1 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        position: sticky;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            gap: 200%;
+        }
+        nav ul li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        transition: 0.3s ;
+        -webkit-transition: 0.3s ;
+        -moz-transition: 0.3s ;
+        -ms-transition: 0.3s ;
+        -o-transition: 0.3s ;
+        padding: 50px 10px;
+        }
+        nav ul li a:hover {
+        background-color: rgb(73, 73, 72);
+        border-bottom: 2px solid white; 
+        }
+        header {
+            background-image: url(/images/interior-shot-cafe-with-chairs-near-bar-with-wooden-tables.jpg);
+            background-size: cover;
+            height: 600px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 90px;
+            color: rgb(6, 24, 24);
+            padding-top: 300px ;
+        }
+        .data {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+            padding-top: 150px;
+        }
+        .time {
+            color: white;
+            background-color: black;
+            font-size: large;
+            float: left;
+            align-items: flex-end;
+            padding: 5px;
+        }
+        .adress {
+            color: white;
+            font-size: large;
+        }
+        h2 {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            padding: 10px 50px;
+            text-align: center;
+            margin-left: 35%;
+            margin-bottom: 70px;
+            letter-spacing: 3px;
+        }
+        .info {
+            font-size: larger;
+            letter-spacing: 3px;
+            line-height: 1.8;
+        }
+        .colored-info {
+            font-style: italic;
+            background-color: rgb(228, 228, 230);
+            position: relative;
+            padding-left: 30px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .colored-info p {
+            margin-top: 10px;
+        }
+        .colored-info::before {
+            /* content: "";
+            width: 10px;
+            background-color: rgb(28, 29, 29);
+            z-index: 1; */
+            content: "";
+            width: 10px;
+            background-color: #b9b7b7;
+            height: 100%;
+            top:0%;
+            left: 0px;
+            position: absolute;
+            z-index: 1;
+        }
+        .first-coffee {
+        height: 503px;
+        }
+        .second-coffee {
+        height: 580px;
+        }
+        span {
+            background-color: black;
+            color: white;
+        }
+        .info {
+            margin-top: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        form input {
+            width: 100%;
+            height: 70px;
+        }
+        input::placeholder {
+            color: rgb(145, 142, 142);
+            font-size: large;
+        }
+        button {
+            width: 160px;
+            height: 70px;
+            font-size: 18px;
+            font-weight: 200;
+            background-color: black;
+            color: white;
+        }
+        button:hover {
+            color: black;
+            background-color: #b9b7b7;
+        }
